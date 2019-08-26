@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  moduleId: module.id,
+  selector: 'app',
+  template: `
+  <h1>Navegation</h1>
+  <homepage></homepage>
+  `
 })
+
 export class AppComponent {
-  title = 'ar-frontend';
+  title: 'Freelance Bootcamp Dashboard';
 }
