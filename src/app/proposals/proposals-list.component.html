@@ -1,2 +1,6 @@
 <h1>PROPOSAL LIST</h1>
-<p>Description</p>
+<div *ngFor="let prop of proposals">
+  <H3>{{prop.id}} | {{ prop.customer }}</H3>
+  <div>{{prop.client_email}}</div>
+</div>
+
