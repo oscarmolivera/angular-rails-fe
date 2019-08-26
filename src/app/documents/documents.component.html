@@ -1,1 +1,10 @@
-<p>documents works!</p>
+<p>List of Documents</p>
+
+<div *ngFor="let doc of documents">
+  <h3>{{ doc.title }}</h3>
+  <em>{{ doc.description }}</em>
+  <div><a href="{{ doc.file_url }}">Download File</a></div>
+  <p>{{ doc.updated_at }}</p>
+  <p>{{ doc.image }}</p>
+  <hr>
+</div>
