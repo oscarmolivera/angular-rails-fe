@@ -6,13 +6,15 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AppRoutingModule} from './app-routing.module';
 import { DocumentsComponent } from './documents/documents.component';
 import { ProposalsListComponent } from './proposals/proposals-list.component';
+import { ProposalsNewComponent } from './proposals/proposals-new.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     DocumentsComponent,
-    ProposalsListComponent
+    ProposalsListComponent,
+    ProposalsNewComponent
   ],
   imports: [
     BrowserModule,
