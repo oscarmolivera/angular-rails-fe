@@ -8,6 +8,7 @@ import { AppRoutingModule} from './app-routing.module';
 import { DocumentsComponent } from './documents/documents.component';
 import { ProposalsListComponent } from './proposals/proposals-list.component';
 import { ProposalsNewComponent } from './proposals/proposals-new.component';
+import { ProposalsShowComponent } from './proposals/proposals-show.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProposalsNewComponent } from './proposals/proposals-new.component';
     HomepageComponent,
     DocumentsComponent,
     ProposalsListComponent,
-    ProposalsNewComponent
+    ProposalsNewComponent,
+    ProposalsShowComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { ProposalsListComponent } from './proposals/proposals-list.component';
 import { ProposalsNewComponent } from './proposals/proposals-new.component';
+import { ProposalsShowComponent } from './proposals/proposals-show.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'documents', component: DocumentsComponent },
   { path: 'proposals', component: ProposalsListComponent },
   { path: 'proposals/new', component: ProposalsNewComponent },
+  { path: 'proposal/:id', component: ProposalsShowComponent },
 ]
 
 @NgModule({
