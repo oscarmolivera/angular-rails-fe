@@ -1,10 +1,24 @@
-<h1>Navegation</h1>
-<a routerLink="/home">Home</a>
 
-<a routerLink="/documents">Docs</a>
-
-<a routerLink="/proposals">Proposal</a>
-
-<a routerLink="/proposals/new">New Proposal</a>
-
-<router-outlet></router-outlet>
+<nav class="navbar navbar-fixed-top navbar-light bg-faded">
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class='nav-link' routerLink="/home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/documents" routerLinkActive="active">Docs</a>
+        </li>
+        <li class="nav-item dropdown">
+          <div ngbDropdown class="d-inline-block dropdown-links">
+            <button class="btn btn-outline-primary" id="proposalDropdown" ngbDropdownToggle>Proposals</button>
+            <div ngbDropdownMenu aria-labelledby="proposalDropdown">
+              <button class="dropdown-item" [routerLink]="['/proposals']" routerLinkActive="router-link-active" >Proposal List</button>
+              <button class="dropdown-item" [routerLink]="['/proposals/new']" routerLinkActive="router-link-active" >New Proposal</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <router-outlet></router-outlet>
