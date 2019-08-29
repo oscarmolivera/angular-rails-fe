@@ -1,7 +1,26 @@
-.router-link-active { 
-  color: darkblue; 
-  font-weight: 900;
-}
+
 .app-body{
   margin-top: 40px;
+}
+.nav-styles,
+.dropdown-links a{
+  background-color: #1a1b22;
+}
+
+.nav-styles a{
+  color: white;
+}
+
+
+.nav-styles a:hover{
+  color: #aa9b9b;
+  font-weight: 900;
+}
+
+.nav-link:active{
+  color: #e64758 !important;
+}
+
+.dropdown-links a:hover{
+  color:#252830;
 }

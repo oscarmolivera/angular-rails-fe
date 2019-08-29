@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light nav-styles  navbar-fixed-top">
     <div class="container">
       <ul class="nav">
         <li class="nav-item">
@@ -9,7 +9,7 @@
           <a class="nav-link" routerLink="/documents" routerLinkActive="router-link-active">Docs</a>
         </li>
         <li class="nav-item dropdown">
-          <div ngbDropdown class="d-inline-block dropdown-links" >
+          <div ngbDropdown class="d-inline-block dropdown-links " >
             <button class="btn btn-outline-primary" id="proposalDropdown" ngbDropdownToggle>Proposals</button>
             <div ngbDropdownMenu aria-labelledby="proposalDropdown" routerLinkActive="router-link-active">
               <button class="dropdown-item" [routerLink]="['/proposals']" routerLinkActive="router-link-active"  [routerLinkActiveOptions]="{ exact: true}">Proposal List</button>
