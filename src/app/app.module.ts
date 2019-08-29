@@ -22,7 +22,7 @@ import { ProposalsShowComponent } from './proposals/proposals-show.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
     NgbModule,
     FormsModule
   ],

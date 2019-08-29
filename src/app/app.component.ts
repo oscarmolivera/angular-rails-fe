@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app',
+  selector: 'app-main',
   templateUrl: 'app.component.html',
-  styles: [`.router-link-active { background-color: lightgray; }`]
+  styleUrls: [ 'app.component.scss' ]
 })
 
 export class AppComponent {

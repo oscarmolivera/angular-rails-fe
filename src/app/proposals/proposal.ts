@@ -1,4 +1,4 @@
-export class Proposal{
+export class Proposal {
   constructor(
     public id?: number,
     public customer?: string,
@@ -8,7 +8,7 @@ export class Proposal{
     public houly_rates?: number,
     public weeks_to_complete?: number,
     public client_email?: string
-  ){}
+  ) {}
 }
-//sample data
+// sample data
 // 19, 'AseFarma SPA', 'http://portfolio.oscarmolivera.me', 'Angular4', 40, 6000clp, 1, 'jules.barros@asefarma.cl'
