@@ -3,7 +3,8 @@ import { Proposal } from './proposal';
 
 @Component({
   selector: 'app-proposals-list',
-  templateUrl: './proposals-list.component.html'
+  templateUrl: './proposals-list.component.html',
+  styleUrls: ['./proposals.component.scss']
 })
 export class ProposalsListComponent implements OnInit {
   proposalOne: Proposal = new Proposal(19, 'AseFarma SPA', 'http://portfolio.oscarmolivera.me', 'Angular4', 40, 6000, 1,
