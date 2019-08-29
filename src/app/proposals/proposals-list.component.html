@@ -1,6 +1,13 @@
-<h1>PROPOSAL LIST</h1>
-<div *ngFor="let prop of proposals">
-  <H3>{{prop.id}} | {{ prop.customer }}</H3>
-  <div>{{prop.client_email}} <a routerLink="/proposal/{{prop.id}}">Show</a></div>
+<div class="container">
+  <div class="list-group">
+    <a class="list-group-item list-group-item-action active">
+      <h1>Proposal List</h1>
+      <span *ngFor="let prop of proposals" class="list-group-item list-group-item-action">
+        <a routerLink="/proposal/{{ prop.id }}" class="proposal-list-link">
+          <h5 class="list-group-item-heading">{{ prop.customer }}</h5>
+          <p class="list-group-item-text">{{ prop.hourly_rates * prop.estimated_hours | currency:'CLP':'symbol' }}</p>
+        </a>
+      </span>
+    </a>
+  </div>
 </div>
-
