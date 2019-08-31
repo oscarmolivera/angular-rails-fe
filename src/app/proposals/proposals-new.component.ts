@@ -7,11 +7,10 @@ import { Proposal } from './proposal';
 })
 
 export class ProposalsNewComponent implements OnInit {
+  proposal = new Proposal();
 
   constructor() { }
 
   ngOnInit() {
   }
-
-  proposal = new Proposal();
 }

@@ -1,7 +1,7 @@
 <div class="container">
   <div class="list-group">
     <a class="list-group-item list-group-item-action active">
-      <h1>Proposal List</h1>
+      <h1 class="header">Proposal List</h1>
       <span *ngFor="let prop of proposals" class="list-group-item list-group-item-action">
         <a routerLink="/proposal/{{ prop.id }}" class="proposal-list-link">
           <h5 class="list-group-item-heading">{{ prop.customer }}</h5>
