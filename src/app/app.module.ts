@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AppRoutingModule} from './app-routing.module';
 import { DocumentsComponent } from './documents/documents.component';
+import { DocumentsService } from './documents/documents.service';
 import { ProposalsListComponent } from './proposals/proposals-list.component';
 import { ProposalsNewComponent } from './proposals/proposals-new.component';
 import { ProposalsShowComponent } from './proposals/proposals-show.component';
@@ -26,7 +27,9 @@ import { ProposalsShowComponent } from './proposals/proposals-show.component';
     NgbModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    DocumentsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
